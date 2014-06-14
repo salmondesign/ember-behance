@@ -1,0 +1,21 @@
+<h3>{{name}}</h3>
+
+<p>{{description}}</p>
+
+<ul class="tags">
+  {{#each tag in tags}}
+    <li>{{tag}}</li>
+  {{/each}}
+</ul>
+
+{{#each module in modules}}
+  {{#if module.text}}
+    {{module.text_plain}}
+  {{/if}}
+
+  {{#if module.src}}
+    <div>
+      <img {{bind-attr src=module.src}} />
+    </div>
+  {{/if}}
+{{/each}}
