@@ -2,6 +2,6 @@
   "port": 4200,
   "host": "0.0.0.0",
   "live-reload": true,
-  "environment": "development",
+  "environment": "production",
   "proxy": "http://www.behance.net"
 }
