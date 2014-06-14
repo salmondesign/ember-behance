@@ -1,21 +1,23 @@
-<h3>{{name}}</h3>
+<div class="container">
+  <h2>{{name}}</h2>
 
-<p>{{description}}</p>
+  <section class="tags">
+    {{#each tag in tags}}
+      <span>{{tag}}, </span>
+    {{/each}}
+  </section>
 
-<ul class="tags">
-  {{#each tag in tags}}
-    <li>{{tag}}</li>
+  {{#each module in modules}}
+    {{#if module.text}}
+      <p>
+        {{module.text_plain}}
+      </p>
+    {{/if}}
+
+    {{#if module.src}}
+      <p>
+        <img {{bind-attr src=module.sizes.max_1240}} />
+      </p>
+    {{/if}}
   {{/each}}
-</ul>
-
-{{#each module in modules}}
-  {{#if module.text}}
-    {{module.text_plain}}
-  {{/if}}
-
-  {{#if module.src}}
-    <div>
-      <img {{bind-attr src=module.src}} />
-    </div>
-  {{/if}}
-{{/each}}
+</div>

@@ -1,5 +1,14 @@
-{{#each}}
-  {{#link-to 'project' this}}
-    <img {{bind-attr src=thumbnail}} class="thumbnail" />
-  {{/link-to}}
-{{/each}}
+<section class="hero">
+  <div class="container">
+    <h1>Rachel Salmon</h1>
+    <h2>Graphic Designer</h2>
+  </div>
+</section>
+
+<div class="container">
+  {{#each}}
+    {{#link-to 'project' this}}
+      <img {{bind-attr src=thumbnail}} class="thumbnail" />
+    {{/link-to}}
+  {{/each}}
+</div>
