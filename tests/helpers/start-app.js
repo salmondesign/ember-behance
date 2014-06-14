@@ -1,4 +1,5 @@
 /* global require */
+import Ember from 'ember';
 
 var Application = require('ember-behance-portfolio/app')['default'];
 var Router = require('ember-behance-portfolio/router')['default'];
