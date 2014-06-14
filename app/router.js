@@ -5,7 +5,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('projects', { path: '/' });
+  this.resource('portfolio', { path: '/' });
   this.resource('project', { path: '/:project_id' });
 
   this.route('contact');

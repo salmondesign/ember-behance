@@ -1,19 +1,12 @@
-import DS from "ember-data";
+import ajax from 'ic-ajax';
+import Ember from "ember";
 
-export default DS.RESTAdapter.reopen({
-  host: 'http://www.behance.net',
-  namespace: 'v2',
-  ajax: function(url, method, hash) {
-    url = url + '?api_key=np1FB2eTl6xF3iJHz6ttXpC5xKvFXkOP';
-    return this._super(url, method, hash);
-  },
-  findAll: function(store, type, sinceToken) {
-    var query;
-
-    if (sinceToken) {
-      query = { since: sinceToken };
-    }
-
-    return this.ajax(this.buildURL('users', 'rachelmsalmon/projects'), 'GET', { data: query });
-  },
+export default Ember.Object.extend({
+  find: function(id) {
+    var url = 'http://www.behance.net/v2/projects/' + id + '?api_key=np1FB2eTl6xF3iJHz6ttXpC5xKvFXkOP';
+    return ajax(url)
+      .then(function(data) {
+        return data.project;
+      });
+  }
 });

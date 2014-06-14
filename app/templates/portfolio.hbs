@@ -7,8 +7,8 @@
 
 <div class="container">
   {{#each}}
-    {{#link-to 'project' this}}
-      <img {{bind-attr src=thumbnail}} class="thumbnail" />
+    {{#link-to 'project' this.id}}
+      <img {{bind-attr src="covers.230"}} class="thumbnail" />
     {{/link-to}}
   {{/each}}
 </div>
