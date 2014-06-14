@@ -5,6 +5,7 @@ export default DS.Model.extend({
   covers: DS.attr(),
   modules: DS.attr(),
   tags: DS.attr(),
+  owners: DS.attr(),
 
   thumbnail: function() {
     return this.get('covers')['230'];
