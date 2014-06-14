@@ -1,4 +1,19 @@
-<h1>Rachel Salmon</h1>
-<h2>Graphic designer</h2>
+<header class="header">
+  <div class="container">
+    {{#link-to 'application' className="blog-logo"}}
+      <img src="logo.png" width="70" height="70" alt="Salmon design logo"/>
+    {{/link-to}}
 
-{{outlet}}
+    <section class="static-pages">
+      {{#link-to 'contact'}}
+        Contact
+      {{/link-to}}
+    </section>
+  </div>
+</header>
+
+<div class="container">
+  {{outlet}}
+</div>
+
+<footer></footer>
