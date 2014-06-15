@@ -1,17 +1,17 @@
-<header class="header">
-  <div class="container">
-    {{#link-to 'application' className="blog-logo"}}
-      <img src="logo.png" width="70" height="70" alt="Salmon design logo"/>
-    {{/link-to}}
+<div class="container">
+<header>
+  {{#link-to 'application' class="header-logo"}}
+    <img src="logo.png" width="70" height="70" alt="Salmon design logo"/>
+  {{/link-to}}
 
-    <section class="static-pages">
-      {{#link-to 'contact'}}
-        Contact
-      {{/link-to}}
-    </section>
-  </div>
+  <nav class="static-pages">
+    {{#link-to 'contact'}}
+      Contact
+    {{/link-to}}
+  </nav>
 </header>
 
 {{outlet}}
 
 <footer></footer>
+</div>

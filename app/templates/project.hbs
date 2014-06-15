@@ -1,23 +1,21 @@
-<div class="container">
-  <h2>{{name}}</h2>
+<h2>{{name}}</h2>
 
-  <section class="tags">
-    {{#each tag in tags}}
-      <span>{{tag}}, </span>
-    {{/each}}
-  </section>
-
-  {{#each module in modules}}
-    {{#if module.text}}
-      <p>
-        {{module.text_plain}}
-      </p>
-    {{/if}}
-
-    {{#if module.src}}
-      <p>
-        <img {{bind-attr src=module.sizes.max_1240}} />
-      </p>
-    {{/if}}
+<p class="tags">
+  {{#each tag in tags}}
+    <span>{{tag}}, </span>
   {{/each}}
-</div>
+</p>
+
+{{#each module in modules}}
+  {{#if module.text}}
+    <p>
+      {{module.text_plain}}
+    </p>
+  {{/if}}
+
+  {{#if module.src}}
+    <p>
+      <img {{bind-attr src=module.sizes.max_1240}} />
+    </p>
+  {{/if}}
+{{/each}}

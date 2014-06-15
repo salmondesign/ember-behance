@@ -1,0 +1,109 @@
+body {
+  background-color: $white;
+}
+
+.container {
+  @include width(4);
+  margin: 0 auto;
+  position: relative;
+}
+
+.color-section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.full-width {
+  @extend .color-section;
+
+  margin-left: -9999px;
+  padding-left: 9999px;
+  margin-right: -9999px;
+  padding-right: 9999px;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+}
+
+a:hover:not(.header-logo .button) {
+  border-bottom: 1px solid $link;
+}
+
+img {
+  max-width: 100%;
+}
+
+a .post-title {
+  color: $text;
+  margin-top: 2em;
+}
+
+.banner {
+  background-color: $green;
+  color: #fff;
+  padding: 10px;
+  margin-left: -9999px;
+  padding-left: 9999px;
+  margin-top: 1em;
+  display: inline;
+  padding-right: 1em;
+}
+
+.hero {
+  @extend .full-width;
+
+  background-color: $green;
+  color: #fff;
+
+
+  h1 {
+    font-weight: 500;
+    line-height: 1em;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-weight: 200;
+    font-size: 1.77em;
+    opacity: 0.7;
+  }
+}
+
+.examples {
+  @extend .container;
+
+  padding-top: 2em;
+  padding-bottom: 1em;
+  background-color: $white;
+
+  .example {
+    position:relative;
+    margin-bottom: 1em;
+    padding: 0;
+    width: $cols4;
+  }
+
+  .example-details {
+    color: $text;
+  }
+}
+
+.testimonial {
+  @extend .full-width;
+
+  background-color: $salmon;
+  color: $white;
+
+  blockquote {
+    border-left: 0.5em solid rgba($white, 0.8);
+    padding-left: 2em;
+    margin: 0;
+
+    .client {
+      line-height: 1.3em;
+      opacity: 0.8;
+    }
+  }
+}

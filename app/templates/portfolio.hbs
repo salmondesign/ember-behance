@@ -1,14 +1,20 @@
 <section class="hero">
-  <div class="container">
-    <h1>Rachel Salmon</h1>
-    <h2>Graphic Designer</h2>
-  </div>
+  <h1>Rachel Salmon</h1>
+  <h2>Graphic Designer</h2>
 </section>
 
-<div class="container">
+<section class="examples">
   {{#each}}
-    {{#link-to 'project' this.id}}
-      <img {{bind-attr src="covers.230"}} class="thumbnail" />
+    {{#link-to 'project' this.id class="example"}}
+      <img {{bind-attr src="covers.404"}} />
+      <span class="example-details">{{this.name}}</span>
     {{/link-to}}
   {{/each}}
-</div>
+</section>
+
+<section class="testimonial">
+  <blockquote>
+    <p>“Rachel worked closely with me… Her approach was incredibly professional. She produced a wonderful logo that can be used flexibly. Her fees were competitive and she delivered on schedule. I will definitely work with her again.”</p>
+    <p class="client">Jane Rich,<br>Cambridge Community Arts</p>
+  </blockquote>
+</section>
