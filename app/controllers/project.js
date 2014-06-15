@@ -7,7 +7,12 @@ export default Ember.ObjectController.extend({
     var adapter = PortfolioAdapter.create();
 
     adapter.findAll().then(function(items) {
-      self.set('portfolio', items.rejectBy('id', self.get('id')))
+      self.set('portfolio', items
+        .rejectBy('id', self.get('id'))
+        .filter(function(item, index) {
+          return index < 4
+        })
+      );
     });
   }.observes('id'),
 
