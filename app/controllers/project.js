@@ -10,7 +10,7 @@ export default Ember.ObjectController.extend({
       self.set('portfolio', items
         .rejectBy('id', self.get('id'))
         .filter(function(item, index) {
-          return index < 4
+          return index < 4;
         })
       );
     });
