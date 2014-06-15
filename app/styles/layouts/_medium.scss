@@ -15,6 +15,10 @@
       @include width(4);
       margin-right: $gutter;
       margin-bottom: $gutter;
+
+      position:relative;
+      margin-bottom: 1em;
+      padding: 0;
     }
 
     .example .example-details {

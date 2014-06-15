@@ -3,14 +3,7 @@
   <h2>Graphic Designer</h2>
 </section>
 
-<section class="examples">
-  {{#each}}
-    {{#link-to 'project' this.id class="example"}}
-      <img {{bind-attr src="covers.404"}} />
-      <span class="example-details">{{this.name}}</span>
-    {{/link-to}}
-  {{/each}}
-</section>
+{{image-gallery items=content}}
 
 <section class="testimonial">
   <blockquote>

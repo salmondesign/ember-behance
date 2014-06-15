@@ -1,21 +1,27 @@
-<h2>{{name}}</h2>
+<section class="project">
+  <h2>{{name}}</h2>
 
-<p class="tags">
-  {{#each tag in tags}}
-    <span>{{tag}}, </span>
+  <p class="tags">
+    {{#each tag in tags}}
+      <span>{{tag}}, </span>
+    {{/each}}
+  </p>
+
+  {{#each module in modules}}
+    {{#if module.text}}
+      <p>
+        {{module.text_plain}}
+      </p>
+    {{/if}}
+
+    {{#if module.src}}
+      <p>
+        <img {{bind-attr src=module.sizes.max_1240}} />
+      </p>
+    {{/if}}
   {{/each}}
-</p>
 
-{{#each module in modules}}
-  {{#if module.text}}
-    <p>
-      {{module.text_plain}}
-    </p>
-  {{/if}}
+  <h2 class="banner">More examples</h2>
 
-  {{#if module.src}}
-    <p>
-      <img {{bind-attr src=module.sizes.max_1240}} />
-    </p>
-  {{/if}}
-{{/each}}
+  {{image-gallery items=portfolio}}
+</section>

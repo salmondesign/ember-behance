@@ -1,0 +1,8 @@
+<section class="examples">
+  {{#each item in items}}
+    {{#link-to 'project' item.id class="example"}}
+      <img {{bind-attr src="item.covers.404"}} />
+      <span class="example-details">{{item.name}}</span>
+    {{/link-to}}
+  {{/each}}
+</section>

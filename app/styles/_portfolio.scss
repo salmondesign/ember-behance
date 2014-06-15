@@ -46,8 +46,7 @@ a .post-title {
   padding: 10px;
   margin-left: -9999px;
   padding-left: 9999px;
-  margin-top: 1em;
-  display: inline;
+  display: inline-block;
   padding-right: 1em;
 }
 
@@ -56,7 +55,6 @@ a .post-title {
 
   background-color: $green;
   color: #fff;
-
 
   h1 {
     font-weight: 500;
@@ -79,14 +77,12 @@ a .post-title {
   background-color: $white;
 
   .example {
-    position:relative;
-    margin-bottom: 1em;
-    padding: 0;
     width: $cols4;
+    margin-bottom: 1em;
   }
 
   .example-details {
-    color: $text;
+    visibility: collapse;
   }
 }
 
