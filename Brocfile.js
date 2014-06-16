@@ -30,4 +30,14 @@ app.import('vendor/ic-ajax/dist/named-amd/main.js', {
   ]
 });
 
-module.exports = app.toTree();
+var tree = app.toTree();
+
+if (app.env == 'production') {
+  var gzipFiles = require('broccoli-gzip');
+  tree = gzipFiles(app.toTree(), {
+    extensions: ['js', 'css'],
+    appendSuffix: false
+  });
+}
+
+module.exports = tree;
