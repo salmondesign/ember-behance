@@ -10,7 +10,7 @@
   {{#each module in modules}}
     {{#if module.text}}
       <p>
-        {{module.text_plain}}
+        {{{module.text}}}
       </p>
     {{/if}}
 
@@ -24,3 +24,5 @@
 
 <h2 class="banner">Show me more</h2>
 {{image-gallery items=portfolio}}
+
+{{get-in-touch}}
