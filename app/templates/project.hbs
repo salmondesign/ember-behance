@@ -1,9 +1,11 @@
 <section class="project">
   <h2>{{name}}</h2>
 
-  <p class="tags">
-    {{#each tag in tags}}
-      <span>{{tag}}, </span>
+  <p class="fields">
+    {{#each field in fields}}
+      {{#link-to 'portfolio' (query-params field=field)}}
+        {{field}}
+      {{/link-to}}
     {{/each}}
   </p>
 
