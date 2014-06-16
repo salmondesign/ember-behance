@@ -32,7 +32,7 @@ app.import('vendor/ic-ajax/dist/named-amd/main.js', {
 
 var tree = app.toTree();
 
-if (app.env == 'production') {
+if (app.env === 'production') {
   var gzipFiles = require('broccoli-gzip');
   tree = gzipFiles(app.toTree(), {
     extensions: ['js', 'css'],
