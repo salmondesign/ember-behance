@@ -4,4 +4,12 @@
   img {
     width: 100%;
   }
+
+  .fields a:after {
+    content:'|'
+  }
+
+  .fields a:last-of-type:after {
+    content:''
+  }
 }
