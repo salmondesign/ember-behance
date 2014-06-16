@@ -6,9 +6,9 @@ export default Ember.ObjectController.extend({
 
   filteredProjects: function() {
     var field = this.get('field');
-    var projects = this.get('content');
+    var projects = this.get('model');
 
-    if (field) {
+    if (field && field !== "null") {
       return projects.filter(function(item){
         return item.fields.contains(field);
       });
