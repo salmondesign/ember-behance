@@ -1,33 +1,5 @@
 /* Photo thumbnail
     ---------------------------------------- */
-
-.photo-thumbnail {
-    height: $cols4 !important;
-    width: $cols4;
-    background-size: cover;
-    background-repeat:no-repeat;
-}
-
-.photo-content-temp {
-    display: none;
-}
-
-/* Social icons
----------------------------------------- */
-
-.icon {
-    width: 32px;
-    height: 32px;
-    background: #f4f4f4;
-    color: #555555;
-    text-align: center;
-    line-height: 100%;
-    line-height: 32px;
-}
-.icon:hover {
-    background: #eaeaea;
-    color: #555555;
-}
 .spinner {
     margin: 100px auto;
     width: 50px;
