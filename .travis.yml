@@ -4,6 +4,7 @@ node_js:
 install: npm install; bower install
 script: ember build --environment production
 deploy:
+  edge: true
   provider: s3
   access_key_id: AKIAIIALQ2ZY23VOG3NA
   secret_access_key:
@@ -14,5 +15,6 @@ deploy:
   region: eu-west-1
   local-dir: dist
   detect_encoding: true
+  cache_control: max-age=2592000
   on:
     branch: master
