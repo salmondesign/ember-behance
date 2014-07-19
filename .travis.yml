@@ -6,9 +6,9 @@ script: ember build --environment production
 deploy:
   edge: true
   provider: s3
-  access_key_id: AKIAIIALQ2ZY23VOG3NA
+  access_key_id: AKIAJ5LWZ4CET7VNWJ5Q
   secret_access_key:
-    secure: Jy6r0ZnYZoDnBv21ZEdQG/vtcHJvyFbR9HBg8uRfa0xdrHdJZRcv01pE8kOO01MGXvqjm7EW6bXX4iQ3cQRy+mruJtMEswldxcDeob2W59vianhNliAk2OaNDjmpq+ixANNSwu3rUEwII8tbc9ia4PVGZDs9NVbCkbKLEMtNf9s=
+    secure: GHmmBgKjnzIC5/UIdoQDLha6+2M81637g3bjAMwOtSn/mQasr//DwaEg18FsyCEKSTfxYrKbPXFnOuxP2QlSYAs8AmUdYpxUa9yyNH2TtfR4NY+uy0+8azxonRd6y+Al+5H74Gf473ZUdzMfMqg7NPVvoWM+3/Nzw9ePMjzFQjg=
   bucket: salmondesign.co
   skip_cleanup: true
   endpoint: salmondesign.co.s3-website-eu-west-1.amazonaws.com
