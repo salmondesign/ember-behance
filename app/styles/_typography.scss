@@ -4,6 +4,7 @@ body {
   text-rendering: optimizeLegibility;
   color: $text;
   font-weight: 400;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,4 +18,12 @@ p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a:hover {
+  border-bottom: 2px $link;
 }

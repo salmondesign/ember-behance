@@ -1,8 +1,18 @@
 .project {
+  margin-top: 2em;
   margin-bottom: 3em;
+
+  h2 {
+    margin: 0;
+  }
 
   img {
     width: 100%;
+  }
+
+  .fields {
+    margin-top: 0;
+    margin-bottom: 2em;
   }
 
   .fields a:after {
