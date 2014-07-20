@@ -3,7 +3,7 @@ node_js:
 - '0.10'
 install: npm install; bower install
 script: ember build --environment production
-after_success: mv index.html index${TRAVIS_BUILD_ID}.html
+before_deploy: mv dist/index.html dist/index${TRAVIS_BUILD_ID}.html
 deploy:
   edge: true
   provider: s3
