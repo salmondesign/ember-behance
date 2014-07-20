@@ -3,7 +3,6 @@ node_js:
 - '0.10'
 install: npm install; bower install
 script: ember build --environment production
-before_deploy: mv dist/index.html dist/index${TRAVIS_BUILD_ID}.html
 deploy:
   edge: true
   provider: s3
@@ -17,6 +16,5 @@ deploy:
   local-dir: dist
   detect_encoding: true
   cache_control: max-age=2592000
-  index_document_suffix: index${TRAVIS_BUILD_ID}.html
   on:
     branch: master
