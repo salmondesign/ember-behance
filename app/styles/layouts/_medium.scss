@@ -3,42 +3,9 @@
     @include width(12);
   }
 
-  .container:after {
-    content:'';
-    display:block;
-    clear: both;
-  }
-
   .examples {
-    .example {
-      float: left;
-      @include width(4);
+    .example:nth-of-type(2n) {
       margin-right: $gutter;
-      margin-bottom: $gutter;
-
-      position:relative;
-      margin-bottom: 1em;
-      padding: 0;
-    }
-
-    .example .example-details {
-      position: absolute;
-      top:0;
-      left:0;
-      right: 0;
-      bottom: 0;
-      padding: 1em;
-
-      visibility: hidden;
-      background-color: transparent;
-      transition: background-color 0.5s;
-    }
-
-    .example:hover .example-details {
-      visibility: visible;
-
-      background-color: rgba($green, 0.85);
-      color: $white;
     }
 
     .example:nth-of-type(3n) {
