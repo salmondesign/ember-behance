@@ -15,6 +15,5 @@ deploy:
   region: eu-west-1
   local-dir: dist
   detect_encoding: true
-  cache_control: max-age=2592000
   on:
     branch: master
