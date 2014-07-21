@@ -4,6 +4,15 @@ export default Ember.ObjectController.extend({
   queryParams: ['field'],
   field: null,
 
+  init: function() {
+    var self = this;
+
+    $('#home').on('click', function(e){
+      self.clearFilter();
+      e.preventDefault();
+    });
+  },
+
   filteredProjects: function() {
     var field = this.get('field');
     var projects = this.get('model');
@@ -15,5 +24,10 @@ export default Ember.ObjectController.extend({
     } else {
       return projects;
     }
-  }.property('field', 'model')
+  }.property('field', 'model'),
+
+  clearFilter: function() {
+    this.set('field', null);
+    this.transitionToRoute('application');
+  }
 });
