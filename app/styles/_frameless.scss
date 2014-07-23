@@ -11,7 +11,7 @@
 $font-size: 16px; 		// Your base font-size in pixels
 $em: $font-size / 1em;	// Shorthand for outputting ems
 
-$column: 48px;	// The column-width of your grid in pixels
+$column: 45px;	// The column-width of your grid in pixels
 $gutter: 16px;	// The gutter-width of your grid in pixels
 $column-with-gutter: $column + $gutter;
 
@@ -50,7 +50,7 @@ $cols16: (16 * ($column + $gutter) - $gutter) / $em;
 */
 
 .ie {
-	
+
 }
 
 /*
@@ -58,7 +58,7 @@ $cols16: (16 * ($column + $gutter) - $gutter) / $em;
 	Just change the media queries to activate them.
 	Assuming your base font-size is 16:
 	- the first one zooms out by a factor of (16-2)/16 = 0.875
-	- the second one zooms in by a factor of (16+2)/16 = 1.125  
+	- the second one zooms in by a factor of (16+2)/16 = 1.125
 */
 
 @media screen and (max-width: 1px) {

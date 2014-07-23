@@ -53,6 +53,7 @@ img {
   @extend .full-width;
 
   background-color: $green;
+  white-space:nowrap;
   color: #fff;
 
   h1 {
