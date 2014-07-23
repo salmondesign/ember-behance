@@ -1,6 +1,5 @@
 html,
 body {
-  font-family: raleway, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   text-rendering: optimizeLegibility;
   color: $text;
   font-weight: 400;
@@ -26,4 +25,18 @@ strong {
 
 a:hover {
   border-bottom: 2px $link;
+}
+
+.wf-loading h1, .wf-loading h2, .wf-loading a {
+  visibility: hidden;
+}
+
+.wf-active body {
+  visibility: visible;
+  font-family: raleway;
+}
+
+.wf-inactive body {
+  visibility: visible;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }

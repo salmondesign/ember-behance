@@ -8,7 +8,6 @@
     {{BASE_TAG}}
 
     <link rel="stylesheet" href="assets/ember-behance-portfolio.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="container">
@@ -44,6 +43,23 @@
     <script src="assets/ember-behance-portfolio.js"></script>
     <script>
       window.EmberBehancePortfolio = require('ember-behance-portfolio/app')['default'].create(EmberBehancePortfolioENV.APP);
+    </script>
+    <script>
+      WebFontConfig = {
+        google: {
+          families: ['Raleway:400', 'Raleway:700']
+        }
+      };
+
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                  '://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
     </script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
