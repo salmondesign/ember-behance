@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     environment: environment,
     baseURL: '/',
-    locationType: 'hash',
+    locationType: 'auto',
     EmberENV: {
       FEATURES: {
         'query-params-new': true
