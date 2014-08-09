@@ -37,6 +37,9 @@
     </div>
 
     <script>
+      history.pushState({}, "entry page", location.hash.substring(1));
+    </script>
+    <script>
       window.EmberBehancePortfolioENV = {{ENV}};
       window.EmberENV = window.EmberBehancePortfolioENV.EmberENV;
     </script>
