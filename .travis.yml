@@ -15,6 +15,7 @@ deploy:
   region: eu-west-1
   local-dir: dist
   detect_encoding: true
-  cache_control: max-age=2592000
+  cache_control: public, max-age=31536000
+  expires: $(date --date="+1 year" -u +"%a, %d %b %Y %X %z")
   on:
     branch: master
