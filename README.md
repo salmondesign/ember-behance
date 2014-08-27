@@ -1,6 +1,6 @@
 # [salmondesign.co](http://salmondesign.co)
 
-![build status](https://travis-ci.org/davidblurton/ember-behance.svg?branch=master)
+[![Build Status](https://travis-ci.org/davidblurton/salmondesign.co.svg?branch=master)](https://travis-ci.org/davidblurton/salmondesign.co)
 
 Portfolio for Rachel Salmon - a graphic designer from Cambridge, UK.
 
