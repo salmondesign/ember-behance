@@ -1,25 +1,7 @@
-# Ember-behance-portfolio
+# [salmondesign.co](http://salmondesign.co)
 
-This README outlines the details of collaborating on this Ember application.
+![build status](https://travis-ci.org/davidblurton/ember-behance.svg?branch=master)
 
-## Installation
+Portfolio for Rachel Salmon - a graphic designer from Cambridge, UK.
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
-
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://iamstef.net/ember-cli/](http://iamstef.net/ember-cli/).
+This site is an [emberjs](http://emberjs.com/) app which uses the [Behance API](https://www.behance.net/dev/api/endpoints/) to retrieve content. Built on travis and hosted on S3.
