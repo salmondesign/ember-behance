@@ -3,7 +3,7 @@ node_js:
 - '0.10'
 env:
   - EXPIRES=$(date --date="+1 year" -u +"%a, %d %b %Y %X %z")
-install: npm install; bower install
+install: npm install; ./node_modules/ember-cli/node_modules/bower/bin/bower install
 script: ember build --environment production
 deploy:
   edge: true
