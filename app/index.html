@@ -26,9 +26,7 @@
         <h2>Graphic Designer</h2>
       </section>
 
-      <div id="app-container">
-        {{content-for 'body'}}
-      </div>
+      <div id="app-container"></div>
 
       <noscript>
         <div class="color-section">
@@ -40,7 +38,7 @@
     </div>
 
     <script>
-      // history.pushState({}, "entry page", location.hash.substring(1));
+      history.pushState({}, "entry page", location.hash.substring(1));
     </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/ember-behance-portfolio.js"></script>
